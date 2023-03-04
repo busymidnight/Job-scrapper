@@ -41,6 +41,7 @@ def extract_wwr_jobs(keyword):
         #print(company.string, position.string, location.string,title.string)
         
   #dictionary로 만들고 for Loop 밖에 저장하기
+  #콤마를 제거한다
         job_data ={
           'link' : f"https://weworkremotely.com{link}",
           'company':company.string.replace(","," "),
