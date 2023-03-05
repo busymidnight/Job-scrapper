@@ -41,7 +41,7 @@ def extract_indeed_jobs(keyword):
     driver = webdriver.Chrome("./chromedriver.exe", options=options)
     driver.get(final_url)
     
-    soup = BeautifulSoup(browser.page_source,"html.parser")
+    soup = BeautifulSoup(driver.page_source,"html.parser")
     job_list = soup.find("ul",class_="jobsearch-ResultsList")
     
     #한 단계만 검색하고 싶으면 recursive=False
