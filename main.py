@@ -38,4 +38,4 @@ def export():
   return send_file(f"{keyword}.csv",as_attachment=True)
 
 if __name__ == '__main__':
-    app.run("")
+    app.run("https://busymidnight.github.io")
